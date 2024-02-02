@@ -25,7 +25,6 @@ export default function Cabecalho() {
             />
           </Link>
         </h1>
-
         <Menu />
       </div>
     </StyledHeader>
@@ -34,11 +33,9 @@ export default function Cabecalho() {
 
 const StyledHeader = styled.header`
   background-color: black;
-  position: fixed;
-  width: 100vw;
+  width: 100%;
   z-index: 555;
-  position: sticky;
-  top: 0;
+  
 
   div {
     display: flex;
@@ -48,7 +45,7 @@ const StyledHeader = styled.header`
 
   .logo {
     display: flex;
-    padding: 1rem 0 0 20rem;
+    padding: 1rem 0 0 0;
     align-items: center;
     margin: 0;
   }

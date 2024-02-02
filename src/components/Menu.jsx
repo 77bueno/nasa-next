@@ -3,12 +3,10 @@ import styled from "styled-components";
 
 export default function Menu() {
   return (
-    <StyledNav>
-      <Link href="/">Blog</Link>
-      <Link href="/sobre">Sobre Nós</Link>
-      <Link href="/contato">Contate-nos</Link>
+     <StyledNav>
+      <Link href="/blog">Blog</Link>
       <Link href="/live">NASA+<span className="live">LIVE</span></Link>
-    </StyledNav>
+    </StyledNav> 
   );
 }
 
@@ -37,6 +35,5 @@ const StyledNav = styled.nav`
       background-color: #cf0d0d;
     }
   }
-
   
 `;
