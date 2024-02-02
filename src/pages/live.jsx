@@ -12,6 +12,15 @@ export default function Live() {
 
       <button>Assista</button>
     </StyledLive>
+
+    <StyledLive2>
+      <h2 className="primeiroh2">Eventos Ao Vivo e Transmissões Oficiais</h2>
+      <p className="aovivo">Live dos perfis oficiais</p>
+
+      <hr />
+      <h2>Live para fins educacionais</h2>
+      <iframe width="355" height="250" src="https://www.youtube.com/embed/21X5lGlDOfg?si=UUVBkNr6j69NvlBx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </StyledLive2>
     </>
   )
 }
@@ -54,5 +63,36 @@ const StyledLive = styled.section`
     font-weight: bold;
     font-size: 18px;
     cursor: pointer;
+  }
+`;
+
+const StyledLive2 = styled.section`
+  margin: 0 0 0 2rem;
+
+  .primeiroh2 {
+    font-size: 2rem;
+    padding: 9rem 2rem 0 0;
+  }
+
+  p {
+    line-height: 1.5rem;
+    margin: 1.5rem 1rem 0 0;
+    font-size: 18px;
+  }
+
+  .aovivo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+  }
+
+  iframe {
+    margin-top: 1rem;
+  }
+
+  hr {
+    width: 22rem;
+    margin: 2rem 0 0.5rem 0;
   }
 `;
