@@ -1,5 +1,7 @@
 import Head from "next/head";
 import styled from "styled-components";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,16 +16,38 @@ export default function Home() {
           <p>Desvendando o Universo com a NASA: Explorações Cósmicas, Pesquisas Avançadas <br /> e Fascinantes Descobertas Astronômicas para Iluminar o Nosso Conhecimento Celestial</p>
 
           <button className="botaoDestaque">Leia mais</button>
+
+          <section className="mini-noticias">
+            <hr />
+            <p>geral</p>
+            <h3>
+              Historia do Eclipse 
+              <Link href="/">
+              <Image
+               className="botaoSeta"
+               src="/images/botao-seta.svg"
+               width={23} height={23}
+               alt="Botão com uma seta" 
+              />
+              </Link>
+            </h3>
+          </section>
+
         </StyledSection>
+
+        <StyledHr>
+          <p>geral</p>
+          <h3>eclipse history</h3>
+        </StyledHr>
     </>
   );
 }
 
 const StyledSection = styled.section`
   color: #ffffff;
-  background-image: url("images/nasa-eclipse.png");
+  background-image: url("images/nasa-eclipse2.png");
   background-size: cover;
-  height: 90vh;
+  height: 95vh;
   background-repeat: no-repeat;
   padding: 0 0 0 2rem;
 
@@ -50,4 +74,33 @@ const StyledSection = styled.section`
     font-weight: bold;
     font-size: 18px;
   }
+
+  hr {
+  border: none;
+  height: 1px;
+  width: 22rem;
+  background: rgba(255, 255, 255, 0.3);  
+  margin: 5rem 0 0 0;
+}
+
+.mini-noticias p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 3.5px;
+  font-size: .7rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+.mini-noticias h3 {
+  display: flex;
+  align-items: center;
+}
+
+.botaoSeta {
+  margin: 0.5rem 0 0 1rem;
+}
+`;
+
+const StyledHr = styled.section`
+
 `;

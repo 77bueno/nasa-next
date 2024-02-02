@@ -48,6 +48,7 @@ const StyledHeader = styled.header`
 
   .logo {
     display: flex;
+    padding: 1rem 0 0 20rem;
     align-items: center;
     margin: 0;
   }
