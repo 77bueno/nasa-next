@@ -3,6 +3,8 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -10,11 +12,10 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  
   font-family: "Roboto", sans-serif;
   background-color: #ededf7;
-
+  
   /* Propriedades recomendadas para
   minimizar a chance de serrilhamento de fontes
   em certos navegadores/dispositivos */
@@ -26,11 +27,5 @@ h1,
 h2,
 h3 {
   /* Fonte usada no design do Figma. */
-  font-family: "Fjalla One", sans-serif;
-}
-
-.limitador {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

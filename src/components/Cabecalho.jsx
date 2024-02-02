@@ -34,6 +34,11 @@ export default function Cabecalho() {
 
 const StyledHeader = styled.header`
   background-color: black;
+  position: fixed;
+  width: 100vw;
+  z-index: 555;
+  position: sticky;
+  top: 0;
 
   div {
     display: flex;
@@ -51,4 +56,10 @@ const StyledHeader = styled.header`
     text-decoration: none;
     color: white;
   }
+
+  .limitador {
+  width: 95%;
+  max-width: 1350px;
+  margin: auto;
+}
 `;
