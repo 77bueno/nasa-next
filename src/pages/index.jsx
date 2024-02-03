@@ -181,6 +181,26 @@ export default function Home() {
           </h3>
           
         </StyledHr>
+
+        <StyledNoticia2>
+      <h2>Explore o Universo a partir da sua Caixa de Entrada</h2>
+      <p>Mantenha-se atualizado(a) sobre as últimas notícias da NASA – da Terra à Lua, do Sistema Solar e além.</p>
+
+      <br />
+      
+      <p> Este site é dedicado exclusivamente a fins educativos e não tem intenção de obter lucro. Todo o conteúdo, imagens e informações apresentadas aqui são propriedade da NASA. Qualquer uso comercial ou reprodução do material deve ser feito em conformidade com os direitos autorais e permissões da NASA. Este site não é afiliado à NASA e <b>não tem a intenção de infringir os direitos autorais ou propriedade intelectual.</b></p>
+      <h3 className="botaoSt">
+        <a target="__blank" href="https://www.nasa.gov/">
+          Site Oficial
+          <Image
+            className="botaoSeta"
+            src="/images/botao-seta.svg"
+            width={23} height={23}
+            alt="Botão com uma seta"
+          />
+          </a>
+      </h3>
+        </StyledNoticia2>
     </>
   );
 }
@@ -430,4 +450,35 @@ const StyledHr = styled.section`
   }
 
 
+`;
+
+const StyledNoticia2 = styled.section`
+  color: #000000;
+  background-color: #fff;
+  padding: 0 1rem 0 2rem;
+
+  h2 {
+    font-size: 2.1rem;
+    padding: 4rem 0 3rem 0;
+  }
+
+  p {
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    padding: 0 2rem 0 0;
+  }
+
+  a {
+    color: #000000;
+  }
+
+  .botaoSeta {
+    margin: 0.5rem 0 -0.2rem 1rem;
+  }
+
+  .botaoSt {
+    font-size: 18px;
+    margin: 1rem 0;
+    padding-bottom: 3rem;
+  }
 `;
