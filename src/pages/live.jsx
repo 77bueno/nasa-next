@@ -18,8 +18,9 @@ export default function Live() {
       <p className="aovivo">Live dos perfis oficiais</p>
 
       <hr />
-      <h2>Live para fins educacionais</h2>
       <iframe width="355" height="250" src="https://www.youtube.com/embed/21X5lGlDOfg?si=UUVBkNr6j69NvlBx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+      <h2>Live para fins educacionais</h2>  
     </StyledLive2>
     </>
   )
