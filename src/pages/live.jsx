@@ -1,3 +1,4 @@
+import Head from "next/head";
 import styled from "styled-components";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,6 +6,9 @@ import Link from "next/link";
 export default function Live() {
   return (
     <>
+    <Head>
+        <title>NASA - Ao Vivo</title>
+      </Head>
     <StyledLive>
       <h2>Artemis I</h2>
       <h3 className="documentary">O documentário</h3>
@@ -18,9 +22,12 @@ export default function Live() {
       <p className="aovivo">Live dos perfis oficiais</p>
 
       <hr />
-      <iframe width="355" height="250" src="https://www.youtube.com/embed/21X5lGlDOfg?si=UUVBkNr6j69NvlBx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="380" height="250" src="https://www.youtube.com/embed/21X5lGlDOfg?si=UUVBkNr6j69NvlBx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
       <h2>Live para fins educacionais</h2>  
+
+      <hr />
+      <iframe width="380" height="250 " src="https://www.youtube.com/embed/jPTD2gnZFUw?si=jGiHFw8eaqeOL_lq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </StyledLive2>
     </>
   )
@@ -42,7 +49,7 @@ const StyledLive = styled.section`
 
   p {
     line-height: 1.5rem;
-    margin: 1.5rem 1rem 0 0;
+    margin: 1.5rem 2rem 0 0;
     font-size: 18px;
   }
 
@@ -93,7 +100,6 @@ const StyledLive2 = styled.section`
   }
 
   hr {
-    width: 22rem;
-    margin: 2rem 0 0.5rem 0;
+    margin: 2rem 2rem 0.5rem 0;
   }
 `;

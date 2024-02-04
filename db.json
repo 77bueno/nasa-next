@@ -1,0 +1,84 @@
+{
+    "noticias" : {
+        "-NplOLQVWPyDI9hxj2LW": {
+          "id": 1,
+          "titulo": "Descoberta Estelar Impressionante",
+          "subtitulo": "Observatório espacial revela nova estrela no coração da Via Láctea.",
+          "descricao": "Astrônomos ficam maravilhados com a descoberta de uma estrela anteriormente desconhecida, adicionando mistério ao centro galáctico.",
+          "categoria": "Astronomia",
+          "data": "2024-02-05"
+        },
+        "-NplOLQW8s9oZ6UT9L41": {
+          "id": 2,
+          "titulo": "Rover Perseverance Encontra Sinal de Água em Marte",
+          "subtitulo": "Novos dados sugerem a presença de água líquida abaixo da superfície marciana.",
+          "descricao": "O rover Perseverance captura sinais promissores de água no subsolo de Marte, aumentando as esperanças de futuras missões humanas.",
+          "categoria": "Exploração Espacial",
+          "data": "2024-03-12"
+        },
+        "-NplOLQWJZDbAyQqCsIo": {
+          "id": 3,
+          "titulo": "Satélite Hubble Captura Imagem Espetacular de Nebulosa",
+          "subtitulo": "Uma visão deslumbrante da Nebulosa da Águia é revelada pelo telescópio Hubble.",
+          "descricao": "O Hubble oferece uma perspectiva sem precedentes de uma das nebulosas mais icônicas, revelando detalhes impressionantes de estrelas em formação.",
+          "categoria": "Astrofotografia",
+          "data": "2024-04-20"
+        },
+        "-NplOLQXtBtxcyHXzGxK": {
+          "id": 4,
+          "titulo": "NASA Anuncia Missão para Explorar Luas de Júpiter",
+          "subtitulo": "Nova missão buscará sinais de vida nas luas geladas de Júpiter.",
+          "descricao": "A NASA planeja lançar uma missão para Europa e Ganimedes, luas de Júpiter, em busca de ambientes propícios à vida.",
+          "categoria": "Exploração Espacial",
+          "data": "2024-05-03"
+        },
+        "-NplOLQXCemPAysyhYVP": {
+          "id": 5,
+          "titulo": "Sonda Solar Parker Quebra Recorde de Aproximação ao Sol",
+          "subtitulo": "A sonda torna-se o objeto humano mais próximo do Sol.",
+          "descricao": "A Sonda Solar Parker supera expectativas ao se aproximar ainda mais do Sol, coletando dados cruciais sobre a coroa solar.",
+          "categoria": "Física Solar",
+          "data": "2024-06-15"
+        },
+        "-NplOLQXw3cQrpHMSo2_": {
+          "id": 6,
+          "titulo": "Astronautas da NASA Cultivam Plantas no Espaço",
+          "subtitulo": "Sucesso na primeira experiência de cultivo no ambiente de microgravidade.",
+          "descricao": "A bordo da Estação Espacial Internacional, astronautas colhem os frutos de um experimento pioneiro de cultivo de plantas no espaço.",
+          "categoria": "Ciências da Vida Espacial",
+          "data": "2024-07-02"
+        },
+        "-NplOLQYusi48ypHrzdf": {
+          "id": 7,
+          "titulo": "Satélite James Webb Pronto para Lançamento",
+          "subtitulo": "O telescópio espacial mais poderoso está prestes a entrar em operação.",
+          "descricao": "Após anos de preparação, o telescópio James Webb está pronto para ser lançado, prometendo revolucionar nossa compreensão do universo.",
+          "categoria": "Astrofísica",
+          "data": "2024-08-08"
+        },
+        "-NplOLQYY7lb_-YLxwbY": {
+          "id": 8,
+          "titulo": "Sonda Juno Captura Imagens Inéditas de Júpiter",
+          "subtitulo": "Detalhes incríveis da atmosfera e tempestades gigantes.",
+          "descricao": "A sonda Juno oferece visões sem precedentes do maior planeta do sistema solar, revelando padrões climáticos impressionantes.",
+          "categoria": "Exploração Espacial",
+          "data": "2024-09-17"
+        },
+        "-NplOLQZepDxzdQYTSjj": {
+          "id": 9,
+          "titulo": "Robôs Exploradores Enviados para Lua de Saturno",
+          "subtitulo": "Missão busca investigar a superfície enigmática de Titã.",
+          "descricao": "A NASA envia robôs exploradores para a lua Titã, de Saturno, para examinar seus lagos de metano e terrenos intrigantes.",
+          "categoria": "Exploração Espacial",
+          "data": "2024-10-05"
+        },
+        "-NplOLQZEjwZSnsPwSmK": {
+          "id": 10,
+          "titulo": "Colônia Lunar: Planos da NASA para Estabelecer Base Permanente",
+          "subtitulo": "Visão de longo prazo inclui presença humana sustentável na Lua.",
+          "descricao": "A NASA revela planos ambiciosos para estabelecer uma colônia lunar permanente, marcando o próximo passo na exploração espacial.",
+          "categoria": "Exploração Espacial",
+          "data": "2024-11-21"
+        }
+      }
+}
