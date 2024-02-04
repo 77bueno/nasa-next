@@ -167,71 +167,70 @@ export default function Home() {
         </StyledNoticiaDestaque>
 
         <StyledBLog>
-    <h1>NASA BLOG</h1>
 
-    <section>
-      <h2> Explorando Além dos Limites: Blog Espacial NASA-inspirado </h2>
-      <p> Bem-vindo(a) ao nosso Blog Espacial, uma homenagem à grandiosa jornada da NASA. Aqui, mergulhamos nas maravilhas do cosmos, inspirados pela inigualável exploração espacial. De missões épicas a descobertas científicas extraordinárias, cada postagem é uma viagem pelo infinito..</p>
+    <section className="conteudo-lado-a">
+      <section className="conteudo-lado-b">
 
-      <h3 className="h3botao">
-          Recursos para Observação do Céu 
-              
-            <a href="">
-            <Image
-               className="botaoSeta"
-               src="/images/botao-seta.svg"
-               width={23} height={23}
-               alt="Botão com uma seta" 
-              />
-            </a>
-              
-      </h3>
+        <h1>NASA BLOG</h1>
+
+        <h2> Explorando Além dos Limites: Blog Espacial NASA-inspirado </h2>
+        <p> Bem-vindo(a) ao nosso Blog Espacial, uma homenagem à grandiosa jornada da NASA. Aqui, mergulhamos nas maravilhas do cosmos, inspirados pela inigualável exploração espacial. De missões épicas a descobertas científicas extraordinárias, cada postagem é uma viagem pelo infinito..</p>
+
+        <h3 className="h3botao">
+            Recursos para Observação do Céu 
+                
+              <a href="">
+              <Image
+                className="botaoSeta"
+                src="/images/botao-seta.svg"
+                width={23} height={23}
+                alt="Botão com uma seta" 
+                />
+              </a>
+                
+        </h3>
+      </section>
       <div className="videoH3">
-      <iframe width="380" height="200" src="https://www.youtube.com/embed/iDAKTLmt2hs?si=mAtevu1E73b3KIIN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="380" height="200" src="https://www.youtube.com/embed/iDAKTLmt2hs?si=mAtevu1E73b3KIIN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       
     </section>
         </StyledBLog>
 
         <StyledNoticia>
-      <h2>HOJE</h2>
-      <h3>Imagem de Hoje</h3>
+            <section className="imagem-de-hoje">
+              <section className="imagem-de-hoje-lado-a">
+                  <h2>HOJE</h2>
+                  <h3>Imagem de Hoje</h3>
 
-      <Image
-        src="/images/nasa-sun.png"
-        width={370} height={300}
-        alt="Imagem do Sol" 
-              
-      />
+              <Image
+                className="imagem-de-hoje2"
+                src="/images/nasa-sun.png"
+                width={360} height={300}
+                alt="Imagem do Sol" 
+                      
+              />
+              </section>
 
-      <h3 className="botaoSt">
-          Veja a imagem
-          <Link href="/imagens">
-          <Image
-            className="botaoSeta"
-            src="/images/botao-seta.svg"
-            width={23} height={23}
-            alt="Botão com uma seta"
-          />
-          </Link>
-      </h3>
+              <section className="subtitulo">
+                <h3>Explorando a Temperatura do Sol</h3>
+                <p>No coração de nosso sistema solar, o Sol reina supremo, uma esfera ardente de energia que desafia nossa compreensão. Seu núcleo, uma forja nuclear incandescente, atinge temperaturas de milhões de graus Celsius, desencadeando uma dança sublime de partículas e luz.</p>
 
-      <section className="subtitulo">
-        <h3>Explorando a Temperatura do Sol</h3>
-        <p>No coração de nosso sistema solar, o Sol reina supremo, uma esfera ardente de energia que desafia nossa compreensão. Seu núcleo, uma forja nuclear incandescente, atinge temperaturas de milhões de graus Celsius, desencadeando uma dança sublime de partículas e luz.</p>
+                <h3>
+                  Arquivo de Imagens
+                  <Link href="/imagens">
+                  <Image
+                  className="botaoSeta2"
+                    src="/images/botao-seta.svg"
+                    width={23} height={23}
+                    alt="Botão com uma seta"
+                  />
+                  </Link>
+              </h3>
+              </section>
+            </section>
 
-        <h3>
-          Arquivo de Imagens
-          <Link href="/imagens">
-          <Image
-          className="botaoSeta2"
-            src="/images/botao-seta.svg"
-            width={23} height={23}
-            alt="Botão com uma seta"
-          />
-          </Link>
-      </h3>
-      </section>
+           
         </StyledNoticia>
 
         <StyledHr>
@@ -579,8 +578,8 @@ const StyledBLog = styled.section`
   }
 
   iframe {
-    margin: 2rem 0 0 0;
-    padding: 0 2rem 0 0;
+    margin: 2rem 0 ;
+    padding: 0 3rem 0 0;
   }
 
   p {
@@ -591,11 +590,51 @@ const StyledBLog = styled.section`
   .botaoSeta {
   margin: 0.5rem 0 -0.2rem 1rem;
 }
+
+
+@media screen and (min-width: 600px) { 
+    iframe {
+    width: 100%;
+    height: 400px;
+    padding: 0;
+  }
+
+}
+
+@media screen and (min-width: 900px) { 
+  height: 100vh;
+  padding: 3rem 0 0 0;
+
+
+  iframe {
+    width: 500px;
+    height: 450px;
+    padding: 0;
+  }
+
+  .conteudo-lado-a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+
+  .conteudo-lado-b {
+    width: 50%;
+  }
+}
+
+
 `;
 
 const StyledNoticia = styled.section`
   padding: 5rem 1rem 5rem 2rem;
   background-color: #fff;
+
+  .imagem-de-hoje2 {
+    padding: 0 1rem 0 0;
+    cursor: pointer;
+  }
 
   h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -624,7 +663,7 @@ const StyledNoticia = styled.section`
 
   .botaoSt {
     font-size: 18px;
-    margin: -1.2rem 0 0 12rem;
+    margin: -1.2rem 0 0 10rem;
   }
 
   .subtitulo h3 {
@@ -633,7 +672,45 @@ const StyledNoticia = styled.section`
 
   .subtitulo p {
       line-height: 1.6rem;
+      padding-right: 1rem;
   }
+
+@media screen and (min-width: 500px) { 
+
+  .imagem-de-hoje2 {
+    width: 350px;
+    height: 350px;
+    padding: 0;
+  }
+
+  .botaoSt {
+    margin: -1.2rem 0 0 14rem;
+  }
+}
+
+@media screen and (min-width: 1000px) { 
+  .imagem-de-hoje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subtitulo {
+    margin: 0 4rem 0 7rem ;
+  }
+
+  .subtitulo h3 {
+    font-size: 22px;
+  }
+
+  .subtitulo p {
+      line-height: 1.6rem;
+      padding-right: 1rem;
+      font-size: 18px;
+  }
+
+}
+  
 `;
 
 const StyledHr = styled.section`
