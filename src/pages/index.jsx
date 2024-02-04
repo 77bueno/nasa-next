@@ -81,24 +81,87 @@ export default function Home() {
         <StyledNoticiaDestaque>
           <h2>Noticias em Destaque</h2>
 
-          <a href="/">
-            <div className="noticiaMirim">
-              <h4>
-                <Image
-                  className="imagem-noticia-mirim"
-                  src="/images/botao-noticia.svg"
-                  width={12} height={20}
-                  alt="icone dentro de uma noticia" 
-                /> 
-                Noticias
-              </h4>
+          <section className="noticiasDestaqueLayout">
+            <a href="/">
+              <div className="noticiaMirim">
+                <h4>
+                  <Image
+                    className="imagem-noticia-mirim"
+                    src="/images/botao-noticia.svg"
+                    width={12} height={20}
+                    alt="icone dentro de uma noticia" 
+                  /> 
+                  Noticias
+                </h4>
 
-              <section className="noticia-mirim-texto">
-                <h4>Leitura rápida</h4>
-                <p>NASA define cobertura para Estação Espacial</p>
+                <section className="noticia-mirim-texto">
+                  <h4>Leitura rápida</h4>
+                  <p>NASA define cobertura para Estação Espacial</p>
+                </section>
+              </div>
+            </a>
+
+            <section className="noticiasDestaqueLayout2">
+              <a href="/">
+                <div className="noticiaMirim2">
+                  <h4>
+                    <Image
+                      className="imagem-noticia-mirim"
+                      src="/images/botao-noticia.svg"
+                      width={12} height={20}
+                      alt="icone dentro de uma noticia" 
+                    /> 
+                    Noticias
+                  </h4>
+
+                  <section className="noticia-mirim-texto">
+                    <h4>Leitura Detalhada</h4>
+                    <p>NASA convoca reunião estratégica sobre a Missão Artemis III</p>
+                  </section>
+                </div>
+              </a>
+
+              <section className="noticiasDestaqueLayout3">
+                <a href="/">
+                  <div className="noticiaMirim3">
+                    <h4>
+                      <Image
+                        className="imagem-noticia-mirim"
+                        src="/images/botao-noticia.svg"
+                        width={12} height={20}
+                        alt="icone dentro de uma noticia" 
+                      /> 
+                      Noticias
+                    </h4>
+
+                    <section className="noticia-mirim-texto">
+                      <h4>Leitura rápida</h4>
+                      <p>NASA executa testes com novo protótipo de Foguete</p>
+                    </section>
+                  </div>
+                </a>
+
+                <a href="/">
+                  <div className="noticiaMirim4">
+                    <h4>
+                      <Image
+                        className="imagem-noticia-mirim"
+                        src="/images/botao-noticia.svg"
+                        width={12} height={20}
+                        alt="icone dentro de uma noticia" 
+                      /> 
+                      Noticias
+                    </h4>
+
+                    <section className="noticia-mirim-texto">
+                      <h4>Leitura rápida</h4>
+                      <p>Nuvens pairam sobre picos de gelo nos Estados Unidos</p>
+                    </section>
+                  </div>
+                </a>
               </section>
-            </div>
-          </a>
+            </section>
+          </section>
 
       
         </StyledNoticiaDestaque>
@@ -328,7 +391,7 @@ const StyledSection = styled.section`
 `;
 
 const StyledNoticiaDestaque = styled.section`
-  padding: 5rem 1rem 5rem 2rem;
+  padding: 5rem 2rem 5rem 2rem;
   background-color: #fff;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
@@ -345,26 +408,104 @@ const StyledNoticiaDestaque = styled.section`
   }
 
   .noticiaMirim {
-    background-image: linear-gradient(to right, #000000be, transparent), url("/images/nasa-estacao.png");
-    width: 95%;
-    height: 300px;
-    background-size: cover;
-    color: #fff;
+      background-image: linear-gradient(to right, #000000be, transparent), url("/images/nasa-estacao.png");
+      width: 95%;
+      height: 300px;
+      background-size: cover;
+      color: #fff;
+      margin-bottom: 1rem;
 
-    h4 {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      letter-spacing: 4px;
-      font-size: 0.7rem;
-      line-height: 2rem;
-      text-transform: uppercase;
-      display: flex;
-      align-items: center;
-      
-      .imagem-noticia-mirim {
-        margin: 0 0.5rem 0 1rem;
+      h4 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 4px;
+        font-size: 0.7rem;
+        line-height: 2rem;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        
+        .imagem-noticia-mirim {
+          margin: 0 0.5rem 0 1rem;
+        }
       }
+  }
+
+  .noticiaMirim2 {
+      background-image: linear-gradient(to right, #000000be, transparent), url("/images/nasa-reuniao.png");
+      width: 95%;
+      height: 315px;
+      background-size: cover;
+      color: #fff;
+      margin-bottom: 1rem;
+
+      h4 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 4px;
+        font-size: 0.7rem;
+        line-height: 2rem;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        
+        .imagem-noticia-mirim {
+          margin: 0 0.5rem 0 1rem;
+        }
+      }
+  }
+
+  .noticiaMirim3 {
+      background-image: linear-gradient(to right, #000000be, transparent), url("/images/nasa-foguete.png");
+      width: 95%;
+      height: 220px;
+      background-size: cover;
+      color: #fff;
+      margin-bottom: 1rem;
+
+      h4 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 4px;
+        font-size: 0.7rem;
+        line-height: 2rem;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        
+        .imagem-noticia-mirim {
+          margin: 0 0.5rem 0 1rem;
+        }
+      }
+
+      .noticia-mirim-texto {
+      margin: 5rem 1rem 0 1rem;
     }
-}
+  }
+
+  .noticiaMirim4 {
+      background-image: linear-gradient(to right, #000000be, transparent), url("/images/nasa-capa.png");
+      width: 95%;
+      height: 220px;
+      background-size: cover;
+      color: #fff;
+      margin-bottom: 1rem;
+
+      h4 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 4px;
+        font-size: 0.7rem;
+        line-height: 2rem;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        
+        .imagem-noticia-mirim {
+          margin: 0 0.5rem 0 1rem;
+        }
+      }
+
+      .noticia-mirim-texto {
+      margin: 5rem 1rem 0 1rem;
+    }
+  }
 
   .noticia-mirim-texto {
     margin: 11rem 0 0 1rem;
@@ -374,6 +515,44 @@ const StyledNoticiaDestaque = styled.section`
   p {
     line-height: 1.3rem;
   }
+
+@media screen and (min-width: 600px) { 
+
+  .noticiaMirim2 {
+    .noticia-mirim-texto {
+    margin: 19rem 0 0 1rem;
+  }
+  }
+
+  .noticiaMirim2 {
+    height: 460px;
+  }
+
+  .noticiaMirim {
+    width: 100%;
+  }
+
+  .noticiaMirim3, .noticiaMirim4 {
+    width: 100%;
+  }
+
+  .noticiasDestaqueLayout2 {
+    display: flex;
+}
+
+.noticiasDestaqueLayout3 {
+  display: flex;
+  flex-direction: column;
+}
+}
+
+@media screen and (min-width: 1000px) {
+  .noticiaMirim2 {
+    .noticia-mirim-texto {
+    margin: 19rem 0 0 1rem;
+  }
+  }
+}
 `;
 
 const StyledBLog = styled.section`
@@ -401,6 +580,7 @@ const StyledBLog = styled.section`
 
   iframe {
     margin: 2rem 0 0 0;
+    padding: 0 2rem 0 0;
   }
 
   p {
