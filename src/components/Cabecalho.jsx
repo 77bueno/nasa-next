@@ -60,4 +60,17 @@ const StyledHeader = styled.header`
   max-width: 1350px;
   margin: auto;
 }
+
+@media screen and (min-width: 700px) { 
+  .logo {
+  padding: 1rem 0 0 6rem;
+}
+}
+
+@media screen and (min-width: 1000px) { 
+  .logo {
+  padding: 1rem 0 0 7rem;
+}
+}
+
 `;

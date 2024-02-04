@@ -13,58 +13,66 @@ export default function Home() {
         <StyledSection>
           <h2>O Eclipse <br /> que Encantou a Terra</h2>
           <br />
-          <p>Desvendando o Universo com a NASA: Explorações Cósmicas, Pesquisas Avançadas <br /> e Fascinantes Descobertas Astronômicas para Iluminar o Nosso Conhecimento Celestial</p>
+          <p className="textoDestaque">Desvendando o Universo com a NASA: Explorações Cósmicas, Pesquisas Avançadas e Fascinantes Descobertas Astronômicas para Iluminar o Nosso Conhecimento Celestial</p>
 
           <button className="botaoDestaque">Leia mais</button>
 
           <section className="mini-noticias">
-            <div>
-              <hr />
-            <p>geral</p>
-            <h3>
-              Historia do Eclipse 
-              <Link href="/">
-              <Image
-               className="botaoSeta"
-               src="/images/botao-seta.svg"
-               width={23} height={23}
-               alt="Botão com uma seta" 
-              />
-              </Link>
-            </h3>
-            </div>
             <section>
-            <hr />
-            <p>Missões Futuras</p>
-            <h3>
-               VIPER II
-              <Link href="/">
-              <Image
-               className="botaoSeta"
-               src="/images/botao-seta.svg"
-               width={23} height={23}
-               alt="Botão com uma seta"
-              />
-              </Link>
-            </h3>
+            <div className="mini-noticias-div">
+              <hr />
+              <p>geral</p>
+              <h3>
+                Historia do Eclipse 
+                <a href="/">
+                <Image
+                className="botaoSeta"
+                src="/images/botao-seta.svg"
+                width={16} height={16}
+                alt="Botão com uma seta" 
+                />
+                </a>
+              </h3>
+            </div>
+            </section>
+
+            <section>
+            <div className="mini-noticias-div">
+              <hr />
+              <p>Missões Futuras</p>
+              <h3>
+                VIPER II
+                <a href="/">
+                <Image
+                className="botaoSeta"
+                src="/images/botao-seta.svg"
+                width={16} height={16}
+                alt="Botão com uma seta"
+                />
+                </a>
+              </h3>
+            </div>
             </section>
  
             <section>
-            <hr />
+            <div className="mini-noticias-div">
+              <hr />
 
-            <p>Atualizações da Estação Espacial</p>
-            <h3>
-              Nasa Blog
-              <Link href="/">
-              <Image
-               className="botaoSeta"
-               src="/images/botao-seta.svg"
-               width={23} height={23}
-               alt="Botão com uma seta"
-              />
-              </Link>
-            </h3>
+              <p>Atualizações da Estação Espacial</p>
+              <h3>
+                Nasa Blog
+                <a href="/">
+                <Image
+                className="botaoSeta"
+                src="/images/botao-seta.svg"
+                width={16} height={16}
+                alt="Botão com uma seta"
+                />
+                </a>
+              </h3>
+            </div>
             </section>
+            
             
           </section>
 
@@ -209,7 +217,7 @@ const StyledSection = styled.section`
   color: #ffffff;
   background-image: url("images/nasa-eclipse-mobile.png");
   background-size: cover;
-  height: 95vh;
+  height: 90vh;
   background-repeat: no-repeat;
   padding: 0 2rem 0 2rem;
 
@@ -217,6 +225,11 @@ const StyledSection = styled.section`
   h2 {
     font-size: 2.7rem;
     padding-top: 7rem;
+  }
+
+  h3 {
+    display: flex;
+    align-items: center;
   }
 
   p {
@@ -227,7 +240,7 @@ const StyledSection = styled.section`
     background-color: #cf0d0d;
     border: none;
     padding: 8px;
-    margin: 1.5rem 0 0 0;
+    margin: 1.5rem 0 5rem 0;
     border-radius: 6px;
     width: 10rem;
     height: 2.5rem;
@@ -238,7 +251,7 @@ const StyledSection = styled.section`
   }
 
   .botaoSeta {
-    margin: 0.5rem 0 0 1rem;
+    margin: 0 0 0 1rem;
   }
 
   .mini-noticias p {
@@ -253,42 +266,65 @@ const StyledSection = styled.section`
     height: 1px;
     background: rgba(255, 255, 255, 0.3);
     border: none;
+    margin: 0.5rem 0 0 0;
 }
 
-@media screen and (min-width: 650px ) {
-  .mini-noticias section {
-    border: none;
-    height: 1px;
-    width: 22rem;
-    background: rgba(255, 255, 255, 0.3);
-    margin:  2rem 1.5rem  0 1.5rem;
-}
+/* Para telas a partir de 700px */
+@media screen and (min-width: 600px) { 
+  height: 60vh;
 
-  .mini-noticias div {
-    border: none;
-    height: 1px;
-    width: 22rem;
-    background: rgba(255, 255, 255, 0.3);
-    margin:   2rem 1.5rem 0 0;
-  }
+  .textoDestaque {
+    padding: 0 15rem 0 0;
   }
 
-  .mini-noticias p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  letter-spacing: 3.5px;
-  font-size: .7rem;
-  line-height: 2rem;
-  text-transform: uppercase;
+  .mini-noticias {
+    display: flex;
+    max-width: 1200px;
+    
+    p {
+      font-size: .7rem;
+      padding: 0 4rem 0 0;
+      line-height: 1.6rem;
+    }
+    
+    h3 {
+      font-size: 1rem;
+    }
+
+    .mini-noticias-div {
+      margin: 0 0 0 1rem;
+    }
+  }
+
 }
 
-.mini-noticias {
-  margin: 5rem 0 0 0;
+@media screen and (min-width: 900px) { 
+  background-image: url("images/nasa-eclipse.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+
+  .textoDestaque {
+    padding: 0 20rem 0 0;
+  }
+
+  .botaoDestaque {
+    padding: 12px;
+    width: 12rem;
+    height: 3rem;
+  }
 }
 
-.mini-noticias h3 {
-  display: flex;
-  align-items: center;
-}
 `;
 
 const StyledNoticiaDestaque = styled.section`
@@ -342,7 +378,7 @@ const StyledNoticiaDestaque = styled.section`
 
 const StyledBLog = styled.section`
   color: #ffffff;
-  height: 75vh;
+  height: 80vh;
   padding: 4rem 2rem;
   background-color: #000000;
 
