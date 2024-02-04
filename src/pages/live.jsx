@@ -19,15 +19,17 @@ export default function Live() {
 
     <StyledLive2>
       <h2 className="primeiroh2">Eventos Ao Vivo e Transmissões Oficiais</h2>
-      <p className="aovivo">Live dos perfis oficiais</p>
+      <p className="aovivo">saiba mais no site oficial</p>
 
       <hr />
-      <iframe width="380" height="250" src="https://www.youtube.com/embed/21X5lGlDOfg?si=UUVBkNr6j69NvlBx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-      <h2>Live para fins educacionais</h2>  
+      <section className="lives">
+        <iframe width="350" height="250" src="https://www.youtube.com/embed/21X5lGlDOfg?si=UUVBkNr6j69NvlBx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 
-      <hr />
-      <iframe width="380" height="250 " src="https://www.youtube.com/embed/jPTD2gnZFUw?si=jGiHFw8eaqeOL_lq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="350" height="250 " src="https://www.youtube.com/embed/jPTD2gnZFUw?si=jGiHFw8eaqeOL_lq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <iframe width="350" height="250" src="https://www.youtube.com/embed/P9C25Un7xaM?si=XPT_6pOfMNgiM6N_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </section>
     </StyledLive2>
     </>
   )
@@ -72,19 +74,43 @@ const StyledLive = styled.section`
     font-size: 18px;
     cursor: pointer;
   }
+
+  @media screen and (min-width: 600px) { 
+    p {
+      max-width:  70%;
+    }
+  }
+
+  @media screen and (min-width: 1000px) { 
+    height: 100vh;
+    background-image: linear-gradient(to right, black, transparent), url("images/nasa-artemis.png");
+
+    p {
+      max-width: 50%;
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 const StyledLive2 = styled.section`
-  margin: 0 0 0 2rem;
 
   .primeiroh2 {
     font-size: 2rem;
     padding: 9rem 2rem 0 0;
+    margin: 0 0 0 2rem;
   }
 
   p {
     line-height: 1.5rem;
-    margin: 1.5rem 1rem 0 0;
+    margin: 1.5rem 1rem 0 2rem;
     font-size: 18px;
   }
 
@@ -100,6 +126,28 @@ const StyledLive2 = styled.section`
   }
 
   hr {
-    margin: 2rem 2rem 0.5rem 0;
+    margin: 2rem 2rem 0.5rem 2rem;
   }
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  iframe {
+    padding: 0 2rem 1rem 2rem;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1000px) {
+      iframe {
+      width: 100%;
+      height: 250px;
+      max-width: 70vw;
+      padding: 0 2rem 2rem 2rem;
+    }
+  }
+  
 `;

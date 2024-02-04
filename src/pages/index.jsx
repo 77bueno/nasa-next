@@ -742,7 +742,7 @@ const StyledHr = styled.section`
     margin: 0.5rem 0 0 1rem;
   }
 
-  @media screen and (min-width: 1000px) { 
+  @media screen and (min-width: 1000px) {
     h2 {
       font-size: 5rem;
     }
