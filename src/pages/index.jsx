@@ -723,7 +723,7 @@ const StyledHr = styled.section`
 
   h2 {
     font-size: 3rem;
-    padding: 12rem 0 3rem 0;
+    padding: 8rem 0 3rem 0;
   }
 
   p {
@@ -742,7 +742,21 @@ const StyledHr = styled.section`
     margin: 0.5rem 0 0 1rem;
   }
 
+  @media screen and (min-width: 1000px) { 
+    h2 {
+      font-size: 5rem;
+    }
 
+    p{
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      max-width: 50%;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    } 
+  }
 `;
 
 const StyledNoticia2 = styled.section`
