@@ -5,7 +5,6 @@ import Container from "@/components/UI/Container";
 
 export async function getStaticProps({ params }) {
     const { id } = params;
-    console.log(id);
 
     try {
         const resposta = await fetch(`${serverApi}/noticias/${id}`)

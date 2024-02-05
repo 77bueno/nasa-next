@@ -191,7 +191,7 @@ export default function Home() {
         </h3>
       </section>
       <div className="videoH3">
-        <iframe width="380" height="200" src="https://www.youtube.com/embed/iDAKTLmt2hs?si=mAtevu1E73b3KIIN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="380" height="200" src="https://www.youtube.com/embed/iDAKTLmt2hs?si=mAtevu1E73b3KIIN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" ></iframe>
       </div>
       
     </section>
@@ -333,7 +333,7 @@ const StyledSection = styled.section`
 
 /* Para telas a partir de 700px */
 @media screen and (min-width: 600px) { 
-  height: 60vh;
+  height: 70vh;
 
   .textoDestaque {
     padding: 0 15rem 0 0;
@@ -384,6 +384,24 @@ const StyledSection = styled.section`
     padding: 12px;
     width: 12rem;
     height: 3rem;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  padding: 0 12rem; 
+  height: 80vh;
+  
+  .mini-noticias {
+    padding: 0 14rem 0 0;
+    max-width: 1500px;
+  }
+
+  .texto-destaque {
+    margin-right: 10rem;
+  }
+
+  .mini-noticias .mini-noticias-div {
+    width: 20vw;
   }
 }
 
@@ -535,7 +553,7 @@ const StyledNoticiaDestaque = styled.section`
     width: 100%;
   }
 
-  .noticiasDestaqueLayout2 {
+  .noticiasDestaqueLayout2 {  
     display: flex;
 }
 
@@ -550,6 +568,27 @@ const StyledNoticiaDestaque = styled.section`
     .noticia-mirim-texto {
     margin: 19rem 0 0 1rem;
   }
+  }
+}
+
+@media screen and (min-width: 1400px) { 
+  .noticiasDestaqueLayout {
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .noticiaMirim {
+    width: 99%;
+  }
+
+  h2 {
+    padding-left: 2.7rem;
+  }
+}
+
+@media screen and (min-width: 1700px) { 
+  h2 {
+    padding-left: 18rem;
   }
 }
 `;
@@ -585,25 +624,26 @@ const StyledBLog = styled.section`
   p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 300;
+    padding: 0 2rem 0 0;
   }
 
   .botaoSeta {
-  margin: 0.5rem 0 -0.2rem 1rem;
-}
+    margin: 0.5rem 0 -0.2rem 1rem;
+  }
 
 
 @media screen and (min-width: 600px) { 
     iframe {
     width: 100%;
-    height: 400px;
-    padding: 0;
+    height: 350px;
+    padding: 0 0 2rem 0;
   }
 
 }
 
 @media screen and (min-width: 900px) { 
-  height: 100vh;
-  padding: 3rem 0 0 0;
+  height: 70vh;
+  padding: 3rem 0;
 
 
   iframe {
@@ -616,11 +656,29 @@ const StyledBLog = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 1rem;
+    margin: 2rem 2rem ;
   }
 
   .conteudo-lado-b {
     width: 50%;
+  }
+
+  h2 {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) { 
+  p {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h1 {
+    font-size: .8rem;
   }
 }
 
@@ -693,6 +751,7 @@ const StyledNoticia = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 6rem;
   }
 
   .subtitulo {
@@ -742,9 +801,16 @@ const StyledHr = styled.section`
     margin: 0.5rem 0 0 1rem;
   }
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 600px) {
+    height: 65vh;
+  }
+
+  @media screen and (min-width: 900px) {
+    height: 85vh;
+    padding: 0 0 0 8rem;
+
     h2 {
-      font-size: 5rem;
+      font-size: 3rem;
     }
 
     p{
@@ -755,6 +821,24 @@ const StyledHr = styled.section`
 
     h3 {
       font-size: 1.5rem;
+    } 
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 3rem 0 0 8rem;
+
+    h2 {
+      font-size: 5rem;
+    }
+
+    p{
+      font-size: 1.4rem;
+      line-height: 1.7rem;
+      max-width: 50%;
+    }
+
+    h3 {
+      font-size: 1.8rem;
     } 
   }
 `;

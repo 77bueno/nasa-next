@@ -24,11 +24,11 @@ export default function Live() {
       <hr />
 
       <section className="lives">
-        <iframe width="350" height="250" src="https://www.youtube.com/embed/21X5lGlDOfg?si=UUVBkNr6j69NvlBx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+        <iframe width="350" height="250" src="https://www.youtube.com/embed/21X5lGlDOfg?si=UUVBkNr6j69NvlBx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"></iframe>  
 
-        <iframe width="350" height="250 " src="https://www.youtube.com/embed/jPTD2gnZFUw?si=jGiHFw8eaqeOL_lq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="350" height="250 " src="https://www.youtube.com/embed/jPTD2gnZFUw?si=jGiHFw8eaqeOL_lq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"></iframe>
 
-        <iframe width="350" height="250" src="https://www.youtube.com/embed/P9C25Un7xaM?si=XPT_6pOfMNgiM6N_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="350" height="250" src="https://www.youtube.com/embed/P9C25Un7xaM?si=XPT_6pOfMNgiM6N_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"></iframe>
       </section>
     </StyledLive2>
     </>
