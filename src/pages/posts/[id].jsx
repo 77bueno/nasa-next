@@ -46,19 +46,21 @@ export default function Noticia({ post }){
 
     <StyledNoticiaId>
         <section className="sessao-dinamica">
-            <div>
+            <div    >
                 <Image
                         className="botaoSeta"
                         src={post.image}
-                        width={350} height={250}
+                        width={300} height={250}
                         alt={`${post.image}`}
                     />
             </div>
             
             <Container>
-                <h2>{post.titulo}</h2>
-                <h3>{post.categoria}</h3>
-                <p>{post.descricao}</p>
+                <section>  
+                    <h2>{post.titulo}</h2>
+                    <h3>{post.categoria}</h3>
+                    <p>{post.descricao}</p>
+                </section>
             </Container>
         </section>
     </StyledNoticiaId>
