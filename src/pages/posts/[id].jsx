@@ -2,12 +2,13 @@ import Head from "next/head";
 import styled from "styled-components";
 import serverApi from "../api/server";
 import Container from "@/components/UI/Container";
+import Image from "next/image";
 
 export async function getStaticProps({ params }) {
     const { id } = params;
 
     try {
-        const resposta = await fetch(`${serverApi}/noticias/${id}`)
+        const resposta = await fetch(`${serverApi}/noticias/${id}.json`)
         if (!resposta.ok) {
             throw new Error(`Erro: ${resposta.status} - ${resposta.statusText}`);
           }
@@ -44,16 +45,38 @@ export default function Noticia({ post }){
     </Head>
 
     <StyledNoticiaId>
-        <h2>{post.titulo}</h2>
-        <Container>
-            <h3>{post.categoria}</h3>
-            <p>{post.descricao}</p>
-        </Container>
+        <section className="sessao-dinamica">
+            <div>
+                <Image
+                        className="botaoSeta"
+                        src={post.image}
+                        width={350} height={250}
+                        alt={`${post.image}`}
+                    />
+            </div>
+            
+            <Container>
+                <h2>{post.titulo}</h2>
+                <h3>{post.categoria}</h3>
+                <p>{post.descricao}</p>
+            </Container>
+        </section>
     </StyledNoticiaId>
     </>
 );
 }
 
 const StyledNoticiaId = styled.article`
-    padding: 0;
+    .sessao-dinamica {
+        max-width: 80%;
+        margin: auto;
+        padding-top: 5rem;
+    }
+
+    div {
+       
+    }
+
+@media screen and (min-width: 600px) {
+}
 `;

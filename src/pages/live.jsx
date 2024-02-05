@@ -10,11 +10,13 @@ export default function Live() {
         <title>NASA - Ao Vivo</title>
       </Head>
     <StyledLive>
-      <h2>Artemis I</h2>
-      <h3 className="documentary">O documentário</h3>
-      <p>Através do programa Artemis, a NASA mais uma vez pousará humanos na Lua. Acompanhe a jornada da NASA conforme lançamos nosso foguete Space Launch System (SLS) — o foguete mais poderoso que já construímos — e a nave espacial Orion em um teste de voo ao redor da Lua.</p>
+      <section className="sessao-textos"> 
+        <h2>Artemis I</h2>
+        <h3 className="documentary">O documentário</h3>
+        <p>Através do programa Artemis, a NASA mais uma vez pousará humanos na Lua. Acompanhe a jornada da NASA conforme lançamos nosso foguete Space Launch System (SLS) — o foguete mais poderoso que já construímos — e a nave espacial Orion em um teste de voo ao redor da Lua.</p>
 
-      <button>Assista</button>
+        <button>Assista</button>
+      </section>
     </StyledLive>
 
     <StyledLive2>
@@ -75,6 +77,8 @@ const StyledLive = styled.section`
     cursor: pointer;
   }
 
+  
+
   @media screen and (min-width: 600px) { 
     p {
       max-width:  70%;
@@ -98,7 +102,35 @@ const StyledLive = styled.section`
       font-size: 1.5rem;
     }
   }
+
+  @media screen and (min-width: 1400px) { 
+    .sessao-textos {
+      padding: 4rem 0 0 6rem;
+    }
+  }
+
+  @media screen and (min-width: 1700px) { 
+    .sessao-textos {
+      padding: 4rem 0 0 14rem;
+    }
+
+    p {
+      max-width: 50%;
+      line-height: 1.8rem;
+      font-size: 22px;
+    }
+
+    h2 {
+      font-size: 4.5rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+  }
 `;
+
+
 
 const StyledLive2 = styled.section`
 
@@ -147,6 +179,23 @@ const StyledLive2 = styled.section`
       height: 250px;
       max-width: 70vw;
       padding: 0 2rem 2rem 2rem;
+    }
+
+    h2, p {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  @media screen and (min-width: 1700px) {
+    h2, p {
+      text-align: center;
+      
+    }
+
+    p {
+      padding-top: 1rem;
     }
   }
   

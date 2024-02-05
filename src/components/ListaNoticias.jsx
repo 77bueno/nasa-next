@@ -6,9 +6,9 @@ export default function ListaNoticias({ posts }) {
     <StyledListaNoticias>
       {posts.map((post) => (
         <article key={post.id}>
-          <Link className="lista-noticia" href={`/noticias/${post.id}`}>
+          <Link className="lista-noticia" href={`/posts/${post.id}`}>
             
-              <section>
+              <section className="titulo-noticia">
                 <h4>{post.titulo}</h4>
                 <h5>{post.categoria}</h5>
                 <h5>{post.data}</h5>
@@ -29,6 +29,7 @@ const StyledListaNoticias = styled.section`
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
     border-radius: 8px;
     padding: 20px;
+    font-size: 1.2rem;
     margin: 2rem 0 2rem 0;
 
     &:hover {
@@ -60,7 +61,7 @@ const StyledListaNoticias = styled.section`
   }
   
   @media screen and (min-width: 600px) {
-        .lista-noticia {
+        .titulo-noticia {
         display: flex;
         justify-content: space-between;
         align-items: center;

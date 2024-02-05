@@ -83,14 +83,25 @@ const StyledBlog = styled.article`
     h1 {
       font-size: 2.9rem;
     }
+ 
+    .fonte-maior {
+      font-size: 1.2rem;
+    }
 
-    
-      .fonte-maior {
-        font-size: 1.2rem;
-      }
+    .mini-noticias, .blog-inicial {
+      max-width: 1100px;
+      margin: auto;
+    }
   }
 
-  @media screen and (min-width: 1100px) { 
-    margin: 0 12rem;
+  @media screen and (min-width: 1200px) { 
+    h1 {
+      font-size: 3.3rem;
+    }
+ 
+    .fonte-maior {
+      font-size: 1.4rem;
+    }
   }
+
 `;

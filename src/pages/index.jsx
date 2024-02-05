@@ -389,10 +389,10 @@ const StyledSection = styled.section`
 
 @media screen and (min-width: 1050px) {
   padding: 0 12rem; 
-  height: 80vh;
+  height: 100vh;
   
   .mini-noticias {
-    padding: 0 14rem 0 0;
+    padding: 4rem 0 0 0;
     max-width: 1500px;
   }
 
