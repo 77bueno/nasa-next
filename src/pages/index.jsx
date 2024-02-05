@@ -191,7 +191,7 @@ export default function Home() {
         </h3>
       </section>
       <div className="videoH3">
-        <iframe width="380" height="200" src="https://www.youtube.com/embed/iDAKTLmt2hs?si=mAtevu1E73b3KIIN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" ></iframe>
+        <iframe width="380" height="200" src="https://www.youtube.com/embed/iDAKTLmt2hs?si=mAtevu1E73b3KIIN" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" ></iframe>
       </div>
       
     </section>
