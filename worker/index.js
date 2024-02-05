@@ -1,0 +1,1 @@
+self.__Wb_DISABLE_DEV_LOGS = true;
