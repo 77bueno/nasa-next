@@ -1,0 +1,19 @@
+{
+    "short_name": "Nasa Bueno",
+    "name": "Nasa",
+    "description": "PWA criada com Next.Js",
+    "icons": [
+      {
+        "src": "images/nasa-logo.svg",
+        "type": "image/png",
+        "sizes": "256x256"
+      }
+    ],
+    "start_url": "/",
+    "scope": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#0000000",
+    "orientation": "any",
+    "lang": "pt-br"
+  }
